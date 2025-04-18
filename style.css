@@ -1,0 +1,42 @@
+@charset "utf-8";
+.header_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0% 7% 0% 3%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.headre_logo {
+  width: 239px;
+}
+.pc_nav ul {
+  display: flex;
+  gap: 54px;
+}
+.pc_nav ul li {
+  width: 92px;
+  text-align: center;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", "sans-serif","Lucida Handwriting Italic","Zen Antique Regular","DNP 秀英にじみ明朝 Std L",
+  font-weight: bold;
+  color: #fff;
+  font-size: 18px;
+}
+.title_concept h1{
+    font-family:Lucida Handwriting Italic;
+    font-size: 35px;
+    color: #003b1a;
+}
+.word1{
+    font-family: DNP 秀英にじみ明朝 Std L;
+    font-size: 48px;
+    color: #ffffff;
+}
+.word2{
+    font-size: 17px;
+}
