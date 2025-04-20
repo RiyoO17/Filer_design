@@ -7,38 +7,160 @@
     <title>Filer_design</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'bpy0snk',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
 </head>
 
 <body>
     <header>
-        <video class="video" src="images/AdobeStock_305126466.mov" loop autoplay muted width="1336px" height="752px">
+        <div class="title_word">
+            <p class="vertical">想いを、デザインで紡ぐ</p>
+        </div>
+        <div class="title_word2">
+            <p class="portfolio">Web designer Portforio Site</p>
+        </div>
+        <video class="video" src="images/AdobeStock_305126466.mov" loop autoplay muted>
         </video>
+        <!-- <div class="title_word">
+                <p class="vertical">想いを、デザインで紡ぐ</p>
+            </div>
+            <div class="title_word2">
+                <p class="portfolio">Web designer Portforio Site</p>
+            </div> -->
         <div class="header_wrap">
             <h1 class="header_logo">
                 <img src="images/logo.svg" alt="Filer_design">
             </h1>
             <nav class="pc_nav">
                 <ul>
-                    <li><a href="images/concept.svg">CONCEPT</a></li>
-                    <li><a href="images/about.svg">ABOUT</a></li>
-                    <li><a href="images/work.svg">WORKS</a></li>
-                    <li><a href="images/contact.svg">CONTACT</a></li>
+                    <li><a href="#concept" alt="CONCEPT"></a></li>
+                    <li><a href="./about.html" alt="ABOUT"></a></li>
+                    <li><a href="./works.html" alt="WORKS"></a></li>
+                    <li><a href="#contact" alt="CONTACT"></a></li>
                 </ul>
             </nav>
         </div>
-        <section class="concept" id="concept">
-            <div class="title_concept">
-                <h1>CONCEPT</h1>
-                <div class="word1">
-                    <p> 今まで、とこれからを紡ぐ<br>
-                        夢と、縁を紡ぐ。</p>
-                    <div class="word2">
-                        <p>１本１本の糸が丁寧に紡がれて創られ永く愛される絨毯のように<br>
-                            お客様の想いを紡いで創造を美しく表現するデザインを届けたい</p>
-                    </div>
+    </header>
+    <section class="concept" id="concept">
+        <div class="title_concept">
+            <h1>CONCEPT</h1>
+            <div class="word1">
+                <p> 今まで、とこれからを紡ぐ<br>
+                    夢と、縁を紡ぐ。</p>
+                <div class="word2">
+                    <p>１本１本の糸が丁寧に紡がれて創られ永く愛される絨毯のように<br>
+                        お客様の想いを紡いで創造を美しく表現するデザインを届けたい</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="photo_me">
+            <img src="images/about_photo 2-80.jpg" alt="about">
+        </div>
+        <div class="title_about">
+            <h1>ABOUT</h1>
+            <p class="name">Riyo OKAMOTO</p>
+            <p class="word3">今までの経験や体験も活かしながら<br>
+                美しいものを五感のどこかで捉えたときのような<br>
+                感動をお届けしていきたいです。</p>
+            <div class="word4">
+                <div>
+                    <ul class="d_c">
+                        <li class="d_c1">design</li>
+                        <li class="d_c2">illustrator/photoshop</li>
+                    </ul>
+                    <ul class="d_c">
+                        <li class="d_c1">cording</li>
+                        <li class="d_c2">html/css/Javascript/jQuery</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="radius">view more</div>
+    </section>
+
+    <section class="works" id="works">
+        <div class="title_works">
+            <h1>WORKS</h1>
+            <ul class="works1">
+                <li class="port">
+                    <div>
+                        <h3 class="num">01</h3>
+                        <picture>
+                            <img src="images/1x/works2.jpg" alt="PORT">
+                        </picture>
+                    </div>
+                    <p class="text">Webサイト|デザイン・コーディング<br>
+                        ポートフォリオサイト </p>
+                </li>
+
+                <li class="design_cafe">
+                    <div>
+                        <h3 class="num">02</h3>
+                        <picture>
+                            <img src="images/1x/works2.jpg" alt="DESIGN_CAFE">
+                        </picture>
+                    </div>
+                    <p class="text">LP | コーディング<br>
+                        DESIGN CAFE </p>
+                </li>
+                <li class="hamburger">
+                    <div>
+                        <h3 class="num">03</h3>
+                        <picture>
+                            <img src="images/1x/works3.jpg" alt="HAMBURGER">
+                        </picture>
+                    </div>
+                    <p class="text">バナー|デザイン<br>
+                        デラックスバーガー</p>
+
+                </li>
+                <div class="radius">view more</div>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="title_contact">
+            <h1>CONTACT</h1>
+            <div class="text2">
+                <p> 当サイトをご覧いただきありがとうございます。<br>
+                    ご依頼・ご相談などございましたらお気軽にお問い合わせください。<br>
+                    素敵なご縁、楽しみにしております。</p>
+            </div>
+            <div class="contact_border">
+                <div>
+                    <ul class="contact_form">
+                        <li>お名前</li>
+                        <li class="contact_radius"> </li>
+                    </ul>
+                    <ul class="contact_form">
+                        <li>フリガナ</li>
+                        <li class="contact_radius"></li>
+                    </ul>
+                    <ul class="contact_form">
+                        <li>会社名</li>
+                        <li class="contact_radius"></li>
+                    </ul>
+                    <ul class="contact_form">
+                        <li>メールアドレス</li>
+                        <li class="contact_radius"></li>
+                    </ul>
+                    <ul class="contact_form">
+                        <li>お問い合わせ内容</li>
+                        <li class="contact_radius1"></li>
+                    </ul>
+                </div>
+
+            </div>
 
 
 </body>

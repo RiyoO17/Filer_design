@@ -18,12 +18,10 @@ li {
   padding: 0;
   line-height: 1;
   /*デフォルトの文字色、font-familyを予め当てておく*/
-  color: #4f260b;
+  color: #ffffff;
   /* font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
     "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif; */
-  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
-    "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
-    "ＭＳ 明朝", serif;
+  font-family: dnp-shuei-nmincho-std, sans-serif;
   font-feature-settings: "palt";
 }
 
@@ -50,7 +48,10 @@ img {
 }
 
 body {
-  background-color: #88623b;
-
+  background-color: #88623b9c;
+  background-image: url(../images/backcolor.jpg);
   margin: auto;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
 }

@@ -1,0 +1,194 @@
+@charset "utf-8";
+.header_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0% 7% 0% 3%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.video {
+  width: 100%;
+  position: relative;
+}
+.header_logo img {
+  width: 239px;
+}
+.pc_nav ul {
+  display: flex;
+  gap: 54px;
+}
+@font-face {
+  font-family: "Lucida";
+  src: url("LucidaHandwritingStdLight.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.pc_nav ul li {
+  font-family: "Lucida";
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+}
+.title_word {
+  /* margin-top: 218px;
+  margin-right: 93px; */
+  position: absolute;
+  right: 0;
+  writing-mode: vertical-rl;
+  z-index: -1000px;
+  font-size: 26px;
+  font-family: sans-serif;
+}
+.title_word2 {
+  font-family: "abril-display", serif;
+  font-size: 18px;
+  padding-top: 692px;
+  padding-left: 50px;
+}
+.title_concept h1 {
+  padding-top: 190px;
+  padding-left: 179px;
+  font-family: "Lucida";
+  font-size: 35px;
+  color: #003b1a;
+}
+.word1 {
+  padding-top: 53px;
+  padding-left: 170px;
+  font-size: 48px;
+  line-height: 0.75;
+  letter-spacing: 0.15em;
+}
+.word2 {
+  padding-top: 50px;
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 273px;
+}
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+}
+.photo_me {
+  display: flex;
+  justify-content: space-between;
+  width: 46%;
+  overflow: hidden;
+}
+.about h1 {
+  font-family: "Lucida";
+  font-size: 35px;
+  color: #003b1a;
+}
+.name {
+  padding-top: 50px;
+  font-size: 53px;
+  color: #003b1a;
+}
+.word3 {
+  padding-top: 29px;
+  font-size: 18px;
+  color: #000000;
+  line-height: 1.75;
+}
+.word4 {
+  padding-top: 38px;
+}
+.d_c1 {
+  padding-top: 12px;
+  font-size: 19px;
+  color: #000000;
+}
+.d_c2 {
+  padding-top: 12px;
+  font-size: 23px;
+  color: #000000;
+}
+.radius {
+  margin-top: 93px;
+  width: 243px;
+  height: 52px;
+  border-radius: 25px;
+  background-color: #003b1a;
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  font-size: 21px;
+  font-family: ;
+}
+.title_works h1 {
+  padding-left: 179px;
+  font-family: "Lucida";
+  font-size: 35px;
+  color: #003b1a;
+}
+.title_works {
+  padding-top: 275px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.radius {
+  margin-top: 93px;
+  width: 243px;
+  height: 52px;
+  border-radius: 25px;
+  background-color: #003b1a;
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  font-size: 21px;
+  font-family: ;
+}
+.title_contact h1 {
+  padding-top: 190px;
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  color: #003b1a;
+}
+.text2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+  color: #000000;
+  padding-top: 38px;
+  line-height: 2.3;
+}
+
+.contact_form {
+  margin-top: 62px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 45px auto;
+}
+.contact_form li {
+  font-size: 16px;
+  color: #000000;
+}
+.contact_radius {
+  width: 609px;
+  height: 51px;
+  background-color: #ffffff;
+  display: block;
+  text-align: center;
+}
+.contact_radius1 {
+  width: 609px;
+  height: 290px;
+  background-color: #ffffff;
+  display: block;
+  align-items: center;
+}
