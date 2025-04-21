@@ -21,7 +21,7 @@ li {
   color: #ffffff;
   /* font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
     "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif; */
-  font-family: dnp-shuei-nmincho-std, sans-serif;
+  font-family: dnp-shuei-nmincho-std, sans-serif, Abril Display Regular;
   font-feature-settings: "palt";
 }
 

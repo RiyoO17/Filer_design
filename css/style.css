@@ -1,53 +1,65 @@
 @charset "utf-8";
-.header_wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0% 7% 0% 3%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  box-sizing: border-box;
-}
-.video {
-  width: 100%;
-  position: relative;
-}
-.header_logo img {
-  width: 239px;
-}
-.pc_nav ul {
-  display: flex;
-  gap: 54px;
-}
 @font-face {
   font-family: "Lucida";
   src: url("LucidaHandwritingStdLight.TTF") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
+h1 {
+  font-family: "Lucida";
+}
+.header_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 0% 7% 0% 3%; */
+  position: absolute;
+  top: 60px;
+  left: 50px;
+  right: 86px;
+  box-sizing: border-box;
+}
+header {
+  position: relative;
+  width: 100%;
+}
+.video {
+  width: 100%;
+}
+.header_logo img {
+  width: 239px;
+  left: 50px;
+}
+.pc_nav ul {
+  display: flex;
+  gap: 54px;
+}
+
 .pc_nav ul li {
   font-family: "Lucida";
   color: #ffffff;
   text-align: center;
   font-size: 18px;
+  font-weight: bold;
 }
 .title_word {
   /* margin-top: 218px;
   margin-right: 93px; */
   position: absolute;
-  right: 0;
+  top: 50%;
+  right: 92px;
   writing-mode: vertical-rl;
-  z-index: -1000px;
+  z-index: 1000;
   font-size: 26px;
   font-family: sans-serif;
+  transform: translateY(-50%);
 }
 .title_word2 {
   font-family: "abril-display", serif;
   font-size: 18px;
-  padding-top: 692px;
-  padding-left: 50px;
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
 }
 .title_concept h1 {
   padding-top: 190px;
@@ -57,14 +69,14 @@
   color: #003b1a;
 }
 .word1 {
-  padding-top: 53px;
+  margin-top: 55px;
   padding-left: 170px;
   font-size: 48px;
   line-height: 0.75;
   letter-spacing: 0.15em;
 }
 .word2 {
-  padding-top: 50px;
+  margin-top: 74px;
   font-size: 17px;
   line-height: 1.8;
   margin-bottom: 273px;
@@ -111,9 +123,9 @@
   padding-top: 12px;
   font-size: 23px;
   color: #000000;
+  margin-bottom: 93px;
 }
 .radius {
-  margin-top: 93px;
   width: 243px;
   height: 52px;
   border-radius: 25px;
@@ -123,8 +135,10 @@
   text-align: center;
   line-height: 50px;
   font-size: 21px;
-  font-family: ;
 }
+/* .works {
+  position: relative;
+} */
 .title_works h1 {
   padding-left: 179px;
   font-family: "Lucida";
@@ -133,12 +147,62 @@
 }
 .title_works {
   padding-top: 275px;
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
   align-items: flex-start;
 }
+.title_works ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.num:nth-child(1) {
+  color: #000000;
+  font-size: 52px;
+  font-weight: lighter;
+  text-align: right;
+}
+.num1 {
+  color: #000000;
+  font-size: 52px;
+  font-weight: lighter;
+  text-align: left;
+}
+
+.text {
+  color: #000000;
+  font-size: 16px;
+  padding-top: 17px;
+}
+.port {
+  padding-right: 134px;
+}
+.design_cafe {
+  margin-right: auto;
+  margin-top: -113px;
+  padding-left: 137px;
+}
+.hamburger {
+  margin-left: auto;
+  margin-bottom: 50px;
+  padding-right: 106px;
+}
+.port img {
+  width: 483px;
+  height: 306px;
+}
+.design_cafe img {
+  width: 483px;
+  height: 306px;
+}
+.hamburger img {
+  width: 532px;
+  height: 299px;
+}
 .radius {
-  margin-top: 93px;
+  margin-right: auto;
+  margin-left: 137px;
+  margin-top: -60px;
   width: 243px;
   height: 52px;
   border-radius: 25px;
@@ -157,12 +221,14 @@
   font-size: 35px;
   color: #003b1a;
 }
+.text2 p {
+  color: #000000;
+}
 .text2 {
   display: flex;
   justify-content: center;
   text-align: center;
   font-size: 16px;
-  color: #000000;
   padding-top: 38px;
   line-height: 2.3;
 }
@@ -191,4 +257,68 @@
   background-color: #ffffff;
   display: block;
   align-items: center;
+}
+.radius {
+  margin-top: 81px;
+  margin: 0% auto;
+  width: 325px;
+  height: 69px;
+  border-radius: 34px;
+  background-color: #003b1a;
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  line-height: 63px;
+  font-size: 22px;
+}
+.square {
+  margin-top: 60px;
+  width: 100%;
+  height: 164px;
+  background-color: #d68f4f;
+}
+.footer_logo {
+  width: 23%;
+  margin: 0% auto;
+  padding-top: 33px;
+}
+.sheep_logo img {
+  width: 133px;
+  height: 150px;
+}
+.top2 img {
+  width: 100%;
+}
+.header_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 0% 7% 0% 3%; */
+  position: absolute;
+  top: 60px;
+  left: 50px;
+  right: 86px;
+  box-sizing: border-box;
+}
+header {
+  position: relative;
+  width: 100%;
+}
+.about2 {
+  font-size: 47px;
+  color: #003b1a;
+  text-align: center;
+  margin: 0% auto;
+  margin-top: 120px;
+  margin-bottom: 76px;
+}
+.about_me {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center;
+  max-width: 1000px; */
+}
+.photo_me2 img {
+  width: 37%;
+  margin-left: 138px;
 }
