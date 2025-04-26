@@ -51,7 +51,7 @@
     </header>
     <section class="concept" id="concept">
         <div class="title_concept">
-            <h1>CONCEPT</h1>
+            <h2>CONCEPT</h2>
             <div class="word1">
                 <p> 今まで、とこれからを紡ぐ<br>
                     夢と、縁を紡ぐ。</p>
@@ -67,7 +67,7 @@
             <img src="3x/about_me@3x-80.jpg" alt="about">
         </div>
         <div class="title_about">
-            <h1>ABOUT</h1>
+            <h2>ABOUT</h2>
             <p class="name">Riyo OKAMOTO</p>
             <p class="word3">今までの経験や体験も活かしながら<br>
                 美しいものを五感のどこかで捉えたときのような<br>
@@ -89,7 +89,7 @@
 
     <section class="works" id="works">
         <div class="title_works">
-            <h1>WORKS</h1>
+            <h2>WORKS</h2>
             <ul class="works1">
                 <li class="port">
                     <div>
@@ -130,7 +130,7 @@
 
     <section class="contact" id="contact">
         <div class="title_contact">
-            <h1>CONTACT</h1>
+            <h2>CONTACT</h2>
             <div class="text2">
                 <p> 当サイトをご覧いただきありがとうございます。<br>
                     ご依頼・ご相談などございましたらお気軽にお問い合わせください。<br>
@@ -139,31 +139,39 @@
             <div class="contact_border">
                 <div>
                     <form
-                        action="https://docs.google.com/forms/d/e/1FAIpQLScEGBTYNSugCySOf8ORywekpEPxCVDSzcQKCx5ymi4Rpz9dYA/viewform?usp=header"
-                        method="POST">
-                        <ul class="contact_form">
-                            <li>お名前</li>
-                            <li class="contact_radius"> </li>
-                        </ul>
-                        <ul class="contact_form">
-                            <li>フリガナ</li>
-                            <li class="contact_radius"></li>
-                        </ul>
-                        <ul class="contact_form">
-                            <li>会社名</li>
-                            <li class="contact_radius"></li>
-                        </ul>
-                        <ul class="contact_form">
-                            <li>メールアドレス</li>
-                            <li class="contact_radius"></li>
-                        </ul>
-                        <ul class="contact_form">
-                            <li>お問い合わせ内容</li>
-                            <li class="contact_radius1"></li>
-                        </ul>
+                        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScEGBTYNSugCySOf8ORywekpEPxCVDSzcQKCx5ymi4Rpz9dYA/formResponse"
+                        method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+                        <div class="contact_form">
+                            <label class="c-form__label" for="field-name">お名前</label>
+                            <input name="entry.585286779" class="contact_radius" id="field-name" placeholder="山田　太郎"
+                                type="text" required="required" />
+                        </div>
+                        <div class="contact_form">
+                            <label class="c-form__label" for="field-furigana">フリガナ</label>
+                            <input name="entry.1294683813" class="contact_radius" id="field-furigana"
+                                placeholder="ヤマダ　タロウ" type="text" required="required" />
+                        </div>
+                        <div class="contact_form">
+                            <label class="c-form__label" for="field-company">会社名</label>
+                            <input name="entry.1372497151" class="contact_radius" id="field-company"
+                                placeholder="株式会社 山田" type="text" required="required" />
+                        </div>
+                        <div class="contact_form">
+                            <label class="c-form__label" for="field-mail">メールアドレス</label>
+                            <input name="entry.1744115681" class="contact_radius" id="field-mail"
+                                placeholder="sample@gmail.com" type="email" required="required" />
+                        </div>
+                        <div class="contact_form">
+                            <label class="c-form__label" for="field-message">お問い合わせ内容</label>
+                            <textarea name="entry.666848537" class="contact_radius1" id="field-message"
+                                placeholder="お問い合わせ内容"></textarea>
+                        </div>
+                        <div class="c-form_submit">
+                            <button class="radius" type="submit">この内容で送信する</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <div class="radius">この内容で送信する</div>
         </div>
     </section>
     <footer>
@@ -176,6 +184,11 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript">
+        let submitted = false;
+    </script>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
+        onload="if(submitted){window.location='./thanks.html';}"></iframe>
 </body>
 
 </html>
