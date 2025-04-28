@@ -588,9 +588,12 @@ table {
 }
 table td {
   border-bottom: 2.2px solid #000000;
-  padding: 73px 210px 33px 0px;
+  padding: 73px 0px 33px 0px;
 }
 
+.work-ice {
+  padding-left: 100px;
+}
 .works-photo-ice img {
   width: 60%;
   margin: 0% auto;
