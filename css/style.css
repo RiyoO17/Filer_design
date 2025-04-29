@@ -276,6 +276,10 @@ textarea {
   border: none;
   outline: none;
 }
+.radius {
+  border: none;
+  outline: none;
+}
 .contact_radius {
   width: 609px;
   height: 51px;
@@ -578,7 +582,9 @@ button {
   font-size: 16px;
   font-weight: bold;
 }
-
+.works3 .sheep_logo {
+  left: 70%;
+}
 table {
   margin: 0% auto;
   width: 60%;
@@ -693,4 +699,95 @@ table td {
 }
 
 @media screen and (max-width: 767px) {
+  /* .pc_header {
+    display: none;
+  }
+  .header_wrap2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .sp_nav {
+    margin-bottom: 55px;
+  }
+  .video {
+    width: 100vw;
+    object-fit: contain;
+  } */
+  .title_word_sp {
+    padding-top: 35px;
+    font-size: 29px;
+    color: #1a1a1a;
+  }
+  .title_word2_sp {
+    padding-top: 20px;
+    font-size: 11px;
+    color: #1a1a1a;
+  }
+
+  .concept {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .title_concept h2 {
+    padding-top: 117px;
+    font-size: 19px;
+  }
+  .word1 {
+    margin-top: 49px;
+    font-size: 24px;
+    letter-spacing: 0.15em;
+    color: #1a1a1a;
+  }
+  .word1 > p {
+    line-height: 1.87;
+  }
+  .word2 {
+    margin-top: 33px;
+    font-size: 16px;
+    color: #1a1a1a;
+  }
+  .word2 > p {
+    line-height: 2.37;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+  .title_about h2 {
+    font-size: 19px;
+    margin-top: 75px;
+    order: -1;
+    text-align: center;
+  }
+  .photo_me {
+    width: 85%;
+  }
+  .name {
+    /* padding-top: 50px; */
+    font-size: 30px;
+  }
+  .word3 {
+    padding-top: 22px;
+    font-size: 14px;
+    color: #000000;
+    line-height: 2.17;
+    padding-bottom: 40px;
+  }
+  .word4 {
+    padding-top: 38px;
+    padding-bottom: 45px;
+  }
+  .d_c1,
+  .d_c3 {
+    font-size: 14px;
+    padding-bottom: 18px;
+  }
+  .d_c2,
+  .d_c4 {
+    font-size: 18px;
+    padding-bottom: 50px;
+  }
+  .d_c4 {
+    margin-bottom: 55px;
+  }
 }
