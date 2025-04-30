@@ -17,6 +17,7 @@
                 h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
         })(document);
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -72,11 +73,13 @@
             </nav>
             <video class="video" src="images/AdobeStock_305126466.mov" loop autoplay muted>
             </video>
-            <div class="title_word_sp" id="top">
-                <p class="vertical">想いを、デザインで紡ぐ</p>
-            </div>
-            <div class="title_word2_sp">
-                <p class="portfolio">Web designer Portforio Site</p>
+            <div class="title_word_wrap">
+                <div class="title_word_sp" id="top">
+                    <p class="vertical">想いを、デザインで紡ぐ</p>
+                </div>
+                <div class="title_word2_sp">
+                    <p class="portfolio">Web designer Portforio Site</p>
+                </div>
             </div>
 
     </header>
@@ -220,6 +223,18 @@
     </script>
     <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
         onload="if(submitted){window.location='./thanks.html';}"></iframe>
+    <script>
+        $(function () {
+            $(window).on('scroll', function () {
+                let headerHeight = $('.pc_header').height()
+                console.log(headerHeight)
+            })
+        })
+
+
+    </script>
+
 </body>
+
 
 </html>

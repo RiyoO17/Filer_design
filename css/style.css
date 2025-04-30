@@ -25,9 +25,12 @@ h1 {
   left: 50px;
   right: 86px;
   box-sizing: border-box;
-  filter: invert(100%) grayscale(100%) contrast(100);
-  /* mix-blend-mode: difference; */
+  /* filter: invert(100%) grayscale(100%) contrast(100); */
 }
+.header_wrap.active {
+  mix-blend-mode: difference;
+}
+
 .sp_header {
   display: none;
 }
@@ -708,17 +711,23 @@ table td {
   }
   .sp_header {
     display: block;
+    height: 100vh;
+    padding-bottom: 5vh;
+    box-sizing: border-box;
   }
   .header_wrap2 {
     display: flex;
     flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
   }
   .sp_nav {
     margin-bottom: 55px;
   }
   .video {
-    width: 100vw;
-    object-fit: contain;
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
   }
   .title_word_sp {
     padding-top: 35px;
@@ -738,23 +747,25 @@ table td {
   .title_concept h2 {
     padding-top: 117px;
     font-size: 19px;
+    padding-left: 0px;
   }
   .word1 {
     margin-top: 49px;
     font-size: 24px;
     letter-spacing: 0.15em;
-    color: #1a1a1a;
+    padding-left: 0px;
   }
   .word1 > p {
     line-height: 1.87;
+    color: #1a1a1a;
   }
   .word2 {
     margin-top: 33px;
     font-size: 16px;
-    color: #1a1a1a;
   }
   .word2 > p {
     line-height: 2.37;
+    color: #1a1a1a;
   }
 
   .about {
@@ -765,6 +776,9 @@ table td {
     margin-top: 75px;
     order: -1;
     text-align: center;
+  }
+  .title_about {
+    display: contents;
   }
   .photo_me {
     width: 85%;
@@ -827,12 +841,14 @@ table td {
     margin-top: 66px;
     padding-right: 10%;
     width: 100%;
+    box-sizing: border-box;
   }
   .design_cafe {
     margin-right: auto;
     margin-top: 66px;
     padding-left: 24%;
     width: 100%;
+    box-sizing: border-box;
   }
   .hamburger {
     margin-left: auto;
@@ -840,6 +856,7 @@ table td {
     padding-top: 64px;
     padding-right: 7%;
     max-width: 100%;
+    box-sizing: border-box;
   }
   .port img {
     width: 100%;
