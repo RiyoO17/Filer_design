@@ -43,9 +43,13 @@ header {
 .video {
   width: 100%;
 }
+.header_logo svg,
 .header_logo img {
   width: 239px;
   left: 50px;
+}
+.header_logo .cls-1 {
+  fill: #fff;
 }
 .pc_nav ul {
   display: flex;
@@ -575,6 +579,8 @@ button {
   width: 90%;
   height: 90%;
   object-fit: contain;
+  margin: 0 auto;
+  align-items: center;
 }
 .works_memo {
   color: #000000;
@@ -712,8 +718,12 @@ table td {
     margin-top: 28px;
     margin-bottom: 55px;
   }
+  .header_logo svg,
   .header_logo img {
     width: 38%;
+  }
+  .header_logo .cls-1 {
+    fill: #000000;
   }
   .sp_header {
     display: block;
@@ -771,7 +781,7 @@ table td {
   }
   .word2 {
     margin-top: 33px;
-    font-size: 16px;
+    font-size: 15px;
     margin-bottom: 0px;
   }
   .word2 > p {
@@ -779,7 +789,9 @@ table td {
     color: #1a1a1a;
     display: inline-block;
   }
-
+  .word2 span {
+    display: inline-block;
+  }
   .about {
     flex-direction: column;
   }
@@ -789,6 +801,9 @@ table td {
     margin-bottom: 21px;
     order: -1;
     text-align: center;
+  }
+  .title_about_sp {
+    width: 85%;
   }
   .title_about {
     display: contents;
@@ -810,6 +825,7 @@ table td {
     padding-top: 18px;
     font-size: 14px;
     line-height: 2.17;
+    letter-spacing: 0.12em;
   }
 
   .word4 {
@@ -913,8 +929,10 @@ table td {
     margin: 45px auto;
   }
   label {
-    margin-top: -62px;
+    margin-top: -30px;
     font-size: 14px;
+    top: 0;
+    transform: translateY(0);
   }
   label:last-child {
     margin-top: -120px;
@@ -1006,6 +1024,14 @@ table td {
   }
   .favorite2 > div {
     width: 100%;
+    display: contents;
+  }
+  .wrap > div {
+    display: contents;
+  }
+  .wrap {
+    display: flex;
+    flex-direction: column;
   }
   .num2 {
     font-size: 18px;
@@ -1021,6 +1047,7 @@ table td {
     width: 68%;
     padding-right: 18%;
     padding-left: 4%;
+    order: -1;
     margin: none;
   }
   .travel {
@@ -1135,10 +1162,13 @@ table td {
   }
   table td {
     max-width: 309px;
-    border-bottom: 1.9px solid #000000;
+    border-bottom: none;
+    border-top: 1.9px solid #000000;
     padding: 15px 0px 45px 0px;
   }
-
+  table {
+    width: 82%;
+  }
   .work-ice {
     padding-left: 16%;
   }
@@ -1168,5 +1198,30 @@ table td {
   }
   .woks4 .sheep_logo {
     left: 10%;
+  }
+  .thanks {
+    background-color: #003b1a;
+  }
+  .thanks_page img {
+    display: none;
+  }
+  .thanks_page h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 128px;
+  }
+  .thanks_word {
+    margin-top: 80px;
+    font-size: 19px;
+    margin-bottom: 88px;
+  }
+
+  .thanks .radius {
+    width: 250px;
+    height: 53px;
+    border-radius: 26px;
+    line-height: 2.7;
+    font-size: 19px;
+    margin-bottom: 118px;
   }
 }
