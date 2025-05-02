@@ -75,7 +75,7 @@
             </video>
             <div class="title_word_wrap">
                 <div class="title_word_sp" id="top">
-                    <p class="vertical">想いを、デザインで紡ぐ</p>
+                    <p class="vertical">想いを、<br class="spbr">デザインで紡ぐ</p>
                 </div>
                 <div class="title_word2_sp">
                     <p class="portfolio">Web designer Portforio Site</p>
@@ -90,8 +90,8 @@
                 <p> 今まで、とこれからを紡ぐ<br>
                     夢と、縁を紡ぐ。</p>
                 <div class="word2">
-                    <p>１本１本の糸が丁寧に紡がれて創られ永く愛される絨毯のように<br>
-                        お客様の想いを紡いで創造を美しく表現するデザインを届けたい</p>
+                    <p>１本１本の糸が丁寧に紡がれて<br class="spbr">創られ永く愛される絨毯のように<br>
+                        お客様の想いを紡いで創造を美しく表現する<br class="spbr">デザインを届けたい</p>
                 </div>
             </div>
         </div>
@@ -102,20 +102,22 @@
         </div>
         <div class="title_about">
             <h2>ABOUT</h2>
-            <p class="name">Riyo OKAMOTO</p>
-            <p class="word3">今までの経験や体験も活かしながら<br>
-                美しいものを五感のどこかで捉えたときのような<br>
-                感動をお届けしていきたいです。</p>
-            <div class="word4">
-                <div>
-                    <ul class="d_c">
-                        <li class="d_c1">design</li>
-                        <li class="d_c2">illustrator/photoshop</li>
-                    </ul>
-                    <ul class="d_c">
-                        <li class="d_c3">cording</li>
-                        <li class="d_c4">html/css/Javascript/jQuery</li>
-                    </ul>
+            <div>
+                <p class="name">Riyo OKAMOTO</p>
+                <p class="word3">今までの経験や体験も活かしながら<br>
+                    美しいものを五感のどこかで捉えたときのような<br>
+                    感動をお届けしていきたいです。</p>
+                <div class="word4">
+                    <div>
+                        <ul class="d_c">
+                            <li class="d_c1">design</li>
+                            <li class="d_c2">illustrator/photoshop</li>
+                        </ul>
+                        <ul class="d_c">
+                            <li class="d_c3">cording</li>
+                            <li class="d_c4">html/css/Javascript/jQuery</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="radius"><a href="./about.html" alt="ABOUT">view more</a></div>
@@ -167,7 +169,7 @@
             <h2>CONTACT</h2>
             <div class="text2">
                 <p> 当サイトをご覧いただきありがとうございます。<br>
-                    ご依頼・ご相談などございましたらお気軽にお問い合わせください。<br>
+                    ご依頼・ご相談などございましたら<br class="spbr">お気軽にお問い合わせください。<br>
                     素敵なご縁、楽しみにしております。</p>
             </div>
             <div class="contact_border">
@@ -227,7 +229,11 @@
         $(function () {
             $(window).on('scroll', function () {
                 let headerHeight = $('.pc_header').height()
-                console.log(headerHeight)
+                if ($(this).scrollTop() + 60 >= headerHeight) {
+                    $('.header_wrap').addClass('active')
+                } else {
+                    $('.header_wrap').removeClass('active')
+                }
             })
         })
 

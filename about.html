@@ -79,46 +79,47 @@
     <section class="favorite">
         <h2>FAVORITE</h2>
         <div class="favorite_photo">
-            <div class="favorite2">
-                <div>
-                    <div class="Sea">
-                        <div>
-                            <h3 class="num2">Sea</h3>
-                            <!-- <img src="SVG/SVG/アセット 1.svg" alt="sea">
-                        </h3> -->
-                            <div class="Sea2">
-                                <picture>
-                                    <img src="images/1x/sea@3x-80.jpg" alt="SEA">
-                                </picture>
-                                <div class="hover-mask">
-                                    <p>Sea<br>
-                                        <br>
-                                        イタリアはシチリアの離島“ファヴィニーニャ島”での景色。<br>
-                                        想像以上の海のcolorはおもわず息をのんでしまう絶景でした。<br>
-                                        何もかもをも包み込み時には解き放ってくれる、<br>
-                                        そんな壮大なパワーを感じる海が大好きです
-                                    </p>
+            <div class="wrap" ontouchstart="">
+                <div class="favorite2">
+                    <div>
+                        <div class="Sea">
+                            <div>
+                                <h3 class="num2">Sea</h3>
+                                <div class="Sea2">
+                                    <picture>
+                                        <img src="images/1x/sea@3x-80.jpg" alt="SEA">
+                                    </picture>
+                                    <div class="hover-mask">
+                                        <p>Sea<br>
+                                            <br>
+                                            イタリアはシチリアの離島“ファヴィニーニャ島”での景色。<br>
+                                            想像以上の海のcolorはおもわず息をのんでしまう絶景でした。<br>
+                                            何もかもをも包み込み時には解き放ってくれる、<br>
+                                            そんな壮大なパワーを感じる海が大好きです
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="wine">
-                        <div>
-                            <h3 class="num2">Wine</h3>
-                            <!-- <img src="SVG/SVG/アセット 3.svg" alt="wine">
+
+                        <div class="wine">
+                            <div>
+                                <h3 class="num2">Wine</h3>
+                                <!-- <img src="SVG/SVG/アセット 3.svg" alt="wine">
                         </h3> -->
-                            <div class="Wine2">
-                                <picture>
-                                    <img src="images/1x/wine@3x-100.jpg" alt="WINE">
-                                </picture>
-                                <div class="hover-mask3">
-                                    <P>Wine<br>
-                                        <br>
-                                        前職で携わっていたこともありワインが大好きです。<br>
-                                        ワイン単品でも時間の経過とともに変化をしていく様を楽しめるのに、<br>
-                                        お料理に合わせるとまたさらに新たな味わいが広がっていく…<br>
-                                        無限の可能性を秘めた味わいの虜です。
-                                    </P>
+                                <div class="Wine2">
+                                    <picture>
+                                        <img src="images/1x/wine@3x-100.jpg" alt="WINE">
+                                    </picture>
+                                    <div class="hover-mask3">
+                                        <P>Wine<br>
+                                            <br>
+                                            前職で携わっていたこともありワインが大好きです。<br>
+                                            ワイン単品でも時間の経過とともに変化をしていく様を楽しめるのに、<br>
+                                            お料理に合わせるとまたさらに新たな味わいが広がっていく…<br>
+                                            無限の可能性を秘めた味わいの虜です。
+                                        </P>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -182,6 +183,21 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        $(function () {
+            $(window).on('scroll', function () {
+                let headerHeight = $('.pc_header').height()
+                if ($(this).scrollTop() + 60 >= headerHeight) {
+                    $('.header_wrap').addClass('active')
+                } else {
+                    $('.header_wrap').removeClass('active')
+                }
+            })
+        })
+
+
+    </script>
 </body>
 
 </html>

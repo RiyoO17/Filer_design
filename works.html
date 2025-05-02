@@ -22,7 +22,10 @@
 <body>
     <header>
         <div class="top3">
-            <img src="images/1x/TOP3-80.jpg" alt="TOP3">
+            <picture>
+                <source srcset="2x/top3_sp@2x-100.jpg" media="(max-width:767px)">
+                <img src="images/1x/TOP3-80.jpg" alt="TOP3">
+            </picture>
         </div>
         <div class="header_wrap">
             <h1 class="header_logo">
@@ -128,6 +131,20 @@
             </div>
         </div>
     </footer>
+    <script>
+        $(function () {
+            $(window).on('scroll', function () {
+                let headerHeight = $('.pc_header').height()
+                if ($(this).scrollTop() + 60 >= headerHeight) {
+                    $('.header_wrap').addClass('active')
+                } else {
+                    $('.header_wrap').removeClass('active')
+                }
+            })
+        })
+
+
+    </script>
 </body>
 
 </html>
