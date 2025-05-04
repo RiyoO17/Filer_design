@@ -14,6 +14,12 @@ h1 {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "zen-antique", sans-serif;
+  src: url();
+  font-weight: 400;
+  font-style: normal;
+}
 .header_wrap {
   display: flex;
   justify-content: space-between;
@@ -27,6 +33,7 @@ h1 {
 }
 .header_wrap.active {
   mix-blend-mode: difference;
+  z-index: 100;
 }
 
 .sp_header {
@@ -91,11 +98,20 @@ header {
   font-size: 35px;
   color: #003b1a;
 }
+/* .fadeIn_up p {
+  opacity: 0;
+  transform: translate(0, 50%);
+  transition: 2s;
+}
+.fadeIn_up.is-show p {
+  transform: translate(0, 0);
+  opacity: 1;
+} */
+
 .word1 {
   margin-top: 55px;
   padding-left: 170px;
   font-size: 48px;
-
   letter-spacing: 0.15em;
 }
 .word1 > p {
@@ -651,17 +667,17 @@ table td {
   }
   .sp_btn {
     display: block;
-    height: 23px;
+    height: 28px;
     cursor: pointer;
     position: absolute;
-    right: 24px;
+    right: 31px;
     z-index: 2;
   }
   .sp_btn span {
     display: block;
-    width: 33px;
+    width: 53px;
     height: 3px;
-    background-color: #fff;
+    background-color: #000000;
     border-radius: 2px;
     position: relative;
     top: 10px;
@@ -671,9 +687,9 @@ table td {
   .sp_btn span::after {
     content: "";
     display: block;
-    width: 33px;
+    width: 53px;
     height: 3px;
-    background-color: #fff;
+    background-color: #000000;
     border-radius: 2px;
     position: absolute;
     transition: 0.3s;
@@ -702,7 +718,7 @@ table td {
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 59, 26, 0.8);
     z-index: 1;
   }
   .sp_nav ul {
@@ -711,7 +727,7 @@ table td {
     align-items: center;
     justify-content: center;
     height: 100%;
-    gap: 40px;
+    gap: 60px;
   }
 }
 
@@ -725,7 +741,8 @@ table td {
   }
   .header_logo svg,
   .header_logo img {
-    width: 38%;
+    width: 144px;
+    padding-left: 24px;
   }
   .header_logo .cls-1 {
     fill: #000000;
@@ -746,6 +763,12 @@ table td {
   .sp_nav {
     margin-bottom: 55px;
   }
+  .sp_nav ul li {
+    font-family: "zen antique";
+    color: #ffffff;
+    text-align: center;
+    font-size: 27px;
+  }
   .video {
     width: 100%;
     height: 70vh;
@@ -756,11 +779,13 @@ table td {
     font-size: 29px;
     color: #1a1a1a;
     line-height: 1.57;
+    padding-left: 24px;
   }
   .title_word2_sp > p {
     padding-top: 20px;
     font-size: 11px;
     color: #1a1a1a;
+    padding-left: 24px;
   }
   .spbr {
     display: block;

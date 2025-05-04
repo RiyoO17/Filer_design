@@ -52,6 +52,9 @@
                     <li><a href="#contact" alt="CONTACT">CONTACT</a></li>
                 </ul>
             </nav>
+            <div class="sp_btn ">
+                <span></span>
+            </div>
         </div>
     </header>
     <h2 class="about2">ABOUT</h2>
@@ -194,8 +197,14 @@
                 }
             })
         })
-
-
+    </script>
+    <script>
+        $(function () {
+            $('.sp_btn').on('click', function () {
+                $('.sp_btn').toggleClass('open');
+                $('.sp_nav').fadeToggle();
+            })
+        })
     </script>
 </body>
 

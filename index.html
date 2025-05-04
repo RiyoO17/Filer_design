@@ -65,10 +65,10 @@
             </h1>
             <nav class="pc_nav">
                 <ul>
-                    <li><a href="#concept" alt="CONCEPT">CONCEPT</a></li>
+                    <li><a href="./index.html#concept" alt="CONCEPT">CONCEPT</a></li>
                     <li><a href="./about.html" alt="ABOUT">ABOUT</a></li>
                     <li><a href="./works.html" alt="WORKS">WORKS</a></li>
-                    <li><a href="#contact" alt="CONTACT">CONTACT</a></li>
+                    <li><a href="./index.html#contact" alt="CONTACT">CONTACT</a></li>
                 </ul>
             </nav>
             <div class="sp_btn ">
@@ -140,15 +140,20 @@
             </div>
 
     </header>
+
     <section class="concept" id="concept">
         <div class="title_concept">
             <h2>CONCEPT</h2>
             <div class="word1">
+                <!-- <div class="txtBox inview fadeIn_up"> -->
                 <p> 今まで、とこれからを紡ぐ<br>
                     夢と、縁を紡ぐ。</p>
+                <!-- </div> -->
                 <div class="word2">
+                    <!-- <div class="txtBox inview fadeIn_up"> -->
                     <p>１本１本の糸が丁寧に紡がれて<br class="spbr">創られ永く愛される絨毯のように<br>
                         お客様の想いを紡いで<span>創造を美しく表現する</span><br class="spbr">デザインを届けたい</p>
+                    <!-- </div> -->
                 </div>
             </div>
         </div>
@@ -293,11 +298,24 @@
                 }
             })
         })
-
-
     </script>
-
+    <script>
+        $(function () {
+            $('.sp_btn').on('click', function () {
+                $('.sp_btn').toggleClass('open');
+                $('.sp_nav').fadeToggle();
+            })
+        })
+    </script>
+    <script>
+        $(function () {
+            $(".inview").on("inview", function (event, isInView) {
+                if (isInView) {
+                    $(this).stop().addClass("is-show");
+                }
+            });
+        });
+    </script>
 </body>
-
 
 </html>
