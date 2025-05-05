@@ -17,6 +17,7 @@
                 h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
         })(document);
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -35,10 +36,10 @@
             </h1>
             <nav class="pc_nav">
                 <ul>
-                    <li><a href="#concept" alt="CONCEPT">CONCEPT</a></li>
+                    <li><a href="./index.html#concept" alt="CONCEPT">CONCEPT</a></li>
                     <li><a href="./about.html" alt="ABOUT">ABOUT</a></li>
                     <li><a href="./works.html" alt="WORKS">WORKS</a></li>
-                    <li><a href="#contact" alt="CONTACT">CONTACT</a></li>
+                    <li><a href="./index.html#contact" alt="CONTACT">CONTACT</a></li>
                 </ul>
             </nav>
             <div class="sp_btn ">
@@ -46,10 +47,10 @@
             </div>
             <nav class="sp_nav">
                 <ul>
-                    <li><a href="#concept" alt="CONCEPT">CONCEPT</a></li>
+                    <li><a href="./index.html#concept" alt="CONCEPT">CONCEPT</a></li>
                     <li><a href="./about.html" alt="ABOUT">ABOUT</a></li>
                     <li><a href="./works.html" alt="WORKS">WORKS</a></li>
-                    <li><a href="#contact" alt="CONTACT">CONTACT</a></li>
+                    <li><a href="./index.html#contact" alt="CONTACT">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
@@ -92,7 +93,7 @@
     <script>
         $(function () {
             $(window).on('scroll', function () {
-                let headerHeight = $('.pc_header').height()
+                let headerHeight = $('header').height()
                 if ($(this).scrollTop() + 60 >= headerHeight) {
                     $('.header_wrap').addClass('active')
                 } else {

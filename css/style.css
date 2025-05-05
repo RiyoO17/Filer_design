@@ -98,16 +98,13 @@ header {
   font-size: 35px;
   color: #003b1a;
 }
-/* .fadeIn_up p {
+.fadeIn p {
   opacity: 0;
-  transform: translate(0, 50%);
   transition: 2s;
 }
-.fadeIn_up.is-show p {
-  transform: translate(0, 0);
+.fadeIn.is-show p {
   opacity: 1;
-} */
-
+}
 .word1 {
   margin-top: 55px;
   padding-left: 170px;
@@ -453,7 +450,7 @@ button {
   margin-bottom: 62px;
 }
 .favorite_photo {
-  /* display: flex; */
+  display: flex;
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 100px;
@@ -461,10 +458,14 @@ button {
 .favorite2 {
   display: flex;
   justify-content: center;
+  width: 50%;
   /* flex-direction: column;
   align-items: flex-end; */
 }
 .favorite2 > div {
+  width: 100%;
+}
+.favorite3 {
   width: 50%;
 }
 .num2 {
@@ -1042,9 +1043,10 @@ table td {
     margin-bottom: 47px;
   }
   .favorite_photo {
-    justify-content: none;
-    align-items: none;
+    justify-content: flex-start;
+    align-items: stretch;
     margin-bottom: 0px;
+    flex-direction: column;
   }
   .favorite2 {
     display: flex;
@@ -1053,6 +1055,10 @@ table td {
     display: contents;
   }
   .favorite2 > div {
+    width: 100%;
+    display: contents;
+  }
+  .favorite3 {
     width: 100%;
     display: contents;
   }
@@ -1083,7 +1089,7 @@ table td {
   .travel {
     width: 70%;
     padding-right: 2%;
-    padding-left: 30%;
+    padding-left: 28%;
     margin: none;
     margin-top: 40px;
     order: -1;

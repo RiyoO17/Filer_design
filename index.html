@@ -18,6 +18,7 @@
         })(document);
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
 </head>
 
 <body>
@@ -76,10 +77,10 @@
             </div>
             <nav class="sp_nav">
                 <ul>
-                    <li><a href="#concept" alt="CONCEPT">CONCEPT</a></li>
+                    <li><a href="./index.html#concept" alt="CONCEPT">CONCEPT</a></li>
                     <li><a href="./about.html" alt="ABOUT">ABOUT</a></li>
                     <li><a href="./works.html" alt="WORKS">WORKS</a></li>
-                    <li><a href="#contact" alt="CONTACT">CONTACT</a></li>
+                    <li><a href="./index.html#contact" alt="CONTACT">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
@@ -145,15 +146,15 @@
         <div class="title_concept">
             <h2>CONCEPT</h2>
             <div class="word1">
-                <!-- <div class="txtBox inview fadeIn_up"> -->
-                <p> 今まで、とこれからを紡ぐ<br>
-                    夢と、縁を紡ぐ。</p>
-                <!-- </div> -->
+                <div class="txtBox inview_re fadeIn">
+                    <p> 今まで、とこれからを紡ぐ<br>
+                        夢と、縁を紡ぐ。</p>
+                </div>
                 <div class="word2">
-                    <!-- <div class="txtBox inview fadeIn_up"> -->
-                    <p>１本１本の糸が丁寧に紡がれて<br class="spbr">創られ永く愛される絨毯のように<br>
-                        お客様の想いを紡いで<span>創造を美しく表現する</span><br class="spbr">デザインを届けたい</p>
-                    <!-- </div> -->
+                    <div class="txtBox inview_re fadeIn">
+                        <p>１本１本の糸が丁寧に紡がれて<br class="spbr">創られ永く愛される絨毯のように<br>
+                            お客様の想いを紡いで<span>創造を美しく表現する</span><br class="spbr">デザインを届けたい</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -312,6 +313,17 @@
             $(".inview").on("inview", function (event, isInView) {
                 if (isInView) {
                     $(this).stop().addClass("is-show");
+                }
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $(".inview_re").on("inview", function (event, isInView) {
+                if (isInView) {
+                    $(this).stop().addClass("is-show");
+                } else {
+                    $(this).stop().removeClass("is-show");
                 }
             });
         });
