@@ -749,6 +749,11 @@ section {
     position: absolute;
     transition: 0.3s;
   }
+  .lower_page .sp_btn span,
+  .lower_page .sp_btn span::before,
+  .lower_page .sp_btn span::after {
+    background-color: #fff;
+  }
   .sp_btn span::before {
     bottom: 10px;
   }
