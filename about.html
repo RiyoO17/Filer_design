@@ -18,6 +18,8 @@
         })(document);
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <link rel="icon" href="favicon.ico" id="favicon">
 </head>
 
 <body>
@@ -61,22 +63,26 @@
     <h2 class="about2">ABOUT</h2>
     <section class="about_me" id="about_me">
         <div class="photo_me2">
-            <source srcset="2x/about_sp@2x-100.jpg" media="(max-width:767px)">
-            <img src="images/1x/about_me2@3x-80.jpg" alt="about2">
+            <div class="imgBox inview fadeIn_left">
+                <source srcset="2x/about_sp@2x-100.jpg" media="(max-width:767px)">
+                <img src="images/1x/about_me2@3x-80.jpg" alt="about2">
+            </div>
         </div>
         <div class="title_about2">
-            <p class="name2">Riyo OKAMOTO</p>
-            <p class="name3">三重県出身　愛知県在住</p>
-            <p class="word5">卒業後、飲食店でサービスに従事しワインが大好きになる。<br>
-                それをキッカケにヨーロッパへ何度か足を運ぶうちに<br>
-                香りの世界に魅せられ香りに纏わる仕事に転職。<br>
-                販売、店舗運営、スタッフ育成に関わらせていただく中で<br>
-                “なにか感動できるもの”“社会に貢献できるもの”を<br>
-                創り出すスキルが欲しいとおもい、<br>
-                webデザインの勉強をスタートする。<br>
-                今まで培ってきた仲間とのコミュニケーションや<br>
-                お客様のニーズや要望をお伺いし心や想いに寄り添えるような<br>
-                デザイナーを目指していきたい。</p>
+            <div class="txtBox inview fadeIn_right">
+                <p class="name2">Riyo OKAMOTO</p>
+                <p class="name3">三重県出身　愛知県在住</p>
+                <p class="word5">卒業後、飲食店でサービスに従事しワインが大好きになる。<br>
+                    それをキッカケにヨーロッパへ何度か足を運ぶうちに<br>
+                    香りの世界に魅せられ香りに纏わる仕事に転職。<br>
+                    販売、店舗運営、スタッフ育成に関わらせていただく中で<br>
+                    “なにか感動できるもの”“社会に貢献できるもの”を<br>
+                    創り出すスキルが欲しいとおもい、<br>
+                    webデザインの勉強をスタートする。<br>
+                    今まで培ってきた仲間とのコミュニケーションや<br>
+                    お客様のニーズや要望をお伺いし心や想いに寄り添えるような<br>
+                    デザイナーを目指していきたい。</p>
+            </div>
         </div>
     </section>
 
@@ -90,7 +96,9 @@
                             <h3 class="num2">Sea</h3>
                             <div class="Sea2">
                                 <picture>
-                                    <img src="images/1x/sea@3x-80.jpg" alt="SEA">
+                                    <div class="imgBox inview fadeIn">
+                                        <img src="images/1x/sea@3x-80.jpg" alt="SEA">
+                                    </div>
                                 </picture>
                                 <div class="hover-mask">
                                     <p>Sea<br>
@@ -108,11 +116,11 @@
                     <div class="wine">
                         <div>
                             <h3 class="num2">Wine</h3>
-                            <!-- <img src="SVG/SVG/アセット 3.svg" alt="wine">
-                        </h3> -->
                             <div class="Wine2">
                                 <picture>
-                                    <img src="images/1x/wine@3x-100.jpg" alt="WINE">
+                                    <div class="imgBox inview fadeIn">
+                                        <img src="images/1x/wine@3x-100.jpg" alt="WINE">
+                                    </div>
                                 </picture>
                                 <div class="hover-mask3">
                                     <p>Wine<br>
@@ -132,11 +140,11 @@
                 <div class="travel">
                     <div>
                         <h3 class="num3">Travel</h3>
-                        <!-- <img src="SVG/SVG/アセット 2.svg" alt="travel">
-                        </h3> -->
                         <div class="Travel2">
                             <picture>
-                                <img src="images/1x/travel@3x-80.jpg" alt="TRAVEL">
+                                <div class="imgBox inview fadeIn">
+                                    <img src="images/1x/travel@3x-80.jpg" alt="TRAVEL">
+                                </div>
                             </picture>
                             <div class="hover-mask2">
                                 <p>Travel<br>
@@ -153,11 +161,11 @@
                 <div class="interior">
                     <div>
                         <h3 class="num3">Interior</h3>
-                        <!-- <img src="SVG/SVG/アセット 4.svg" alt="interior">
-                        </h3> -->
                         <div class="Interior2">
                             <picture>
-                                <img src="images/1x/interior@3x-80.jpg" alt="INTERIOR">
+                                <div class="imgBox inview fadeIn">
+                                    <img src="images/1x/interior@3x-80.jpg" alt="INTERIOR">
+                                </div>
                             </picture>
                             <div class="hover-mask4">
                                 <p>Interior<br>
@@ -206,6 +214,32 @@
                 $('.sp_nav').fadeToggle();
             })
         })
+    </script>
+    <script>$(function () {
+            $(".inview").on("inview", function (event, isInView) {
+                if (isInView) {
+                    $(this).stop().addClass("is-show");
+                }
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $(".inview").on("inview", function (event, isInView) {
+                if (isInView) {
+                    $(this).stop().addClass("is-show");
+                }
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $(".inview").on("inview", function (event, isInView) {
+                if (isInView) {
+                    $(this).stop().addClass("is-show");
+                }
+            });
+        });
     </script>
 </body>
 

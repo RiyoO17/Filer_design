@@ -19,6 +19,7 @@
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/jquery.inview.min.js"></script>
+    <link rel="icon" href="favicon.ico" id="favicon">
 </head>
 
 <body>
@@ -161,25 +162,29 @@
     </section>
     <section class="about" id="about">
         <div class="photo_me">
-            <img src="3x/about_me@3x-80.jpg" alt="about">
+            <div class="imgBox inview fadeIn_left">
+                <img src="3x/about_me@3x-80.jpg" alt="about">
+            </div>
         </div>
         <div class="title_about">
             <h2>ABOUT</h2>
             <div class="title_about_sp">
-                <p class="name">Riyo OKAMOTO</p>
-                <p class="word3">今までの経験や体験も活かしながら<br>
-                    美しいものを五感のどこかで捉えたときのような<br>
-                    感動をお届けしていきたいです。</p>
-                <div class="word4">
-                    <div>
-                        <ul class="d_c">
-                            <li class="d_c1">design</li>
-                            <li class="d_c2">illustrator/photoshop</li>
-                        </ul>
-                        <ul class="d_c">
-                            <li class="d_c3">cording</li>
-                            <li class="d_c4">html/css/Javascript/jQuery</li>
-                        </ul>
+                <div class="txtBox inview fadeIn_right">
+                    <p class="name">Riyo OKAMOTO</p>
+                    <p class="word3">今までの経験や体験も活かしながら<br>
+                        美しいものを五感のどこかで捉えたときのような<br>
+                        感動をお届けしていきたいです。</p>
+                    <div class="word4">
+                        <div>
+                            <ul class="d_c">
+                                <li class="d_c1">design</li>
+                                <li class="d_c2">illustrator/photoshop</li>
+                            </ul>
+                            <ul class="d_c">
+                                <li class="d_c3">cording</li>
+                                <li class="d_c4">html/css/Javascript/jQuery</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -192,38 +197,48 @@
             <ul class="works1">
                 <li class="port">
                     <div>
-                        <h3 class="num">01</h3>
-                        <picture>
-                            <img src="3x/works2_new@3x-80.jpg" alt="PORT">
-                        </picture>
-                    </div>
-                    <p class="text">Webサイト|デザイン・コーディング<br>
-                        ポートフォリオサイト </p>
+                        <div class="imgBox inview fadeIn_up">
+                            <h3 class="num">01</h3>
+                            <picture>
+                                <img src="3x/works2_new@3x-80.jpg" alt="PORT">
+                            </picture>
+                        </div>
+                        <div class="txtBox inview fadeIn_up">
+                            <p class="text">Webサイト|デザイン・コーディング<br>
+                                ポートフォリオサイト </p>
                 </li>
-
-                <li class="design_cafe">
-                    <div>
-                        <h3 class="num1">02</h3>
-                        <picture>
-                            <img src="3x/works2_new@3x-80.jpg" alt="DESIGN_CAFE">
-                        </picture>
-                    </div>
+        </div>
+        </div>
+        <li class="design_cafe">
+            <div>
+                <div class="imgBox inview fadeIn_up">
+                    <h3 class="num1">02</h3>
+                    <picture>
+                        <img src="3x/works2_new@3x-80.jpg" alt="DESIGN_CAFE">
+                    </picture>
+                </div>
+                <div class="txtBox inview fadeIn_up">
                     <p class="text">LP | コーディング<br>
                         DESIGN CAFE </p>
-                </li>
-                <li class="hamburger">
-                    <div>
-                        <h3 class="num">03</h3>
-                        <picture>
-                            <img src="3x/works3_new@3x-80.jpg" alt="HAMBURGER">
-                        </picture>
-                    </div>
+        </li>
+        </div>
+        </div>
+        <li class="hamburger">
+            <div>
+                <div class="imgBox inview fadeIn_up">
+                    <h3 class="num">03</h3>
+                    <picture>
+                        <img src="3x/works3_new@3x-80.jpg" alt="HAMBURGER">
+                    </picture>
+                </div>
+                <div class="txtBox inview fadeIn_up">
                     <p class="text">バナー|デザイン<br>
                         デラックスバーガー</p>
-
-                </li>
-                <div class="radius"><a href="./works.html" alt="WORKS">view more</a></div>
-            </ul>
+        </li>
+        </div>
+        </div>
+        <div class="radius"><a href="./works.html" alt="WORKS">view more</a></div>
+        </ul>
         </div>
     </section>
 
@@ -324,6 +339,24 @@
                     $(this).stop().addClass("is-show");
                 } else {
                     $(this).stop().removeClass("is-show");
+                }
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $(".inview").on("inview", function (event, isInView) {
+                if (isInView) {
+                    $(this).stop().addClass("is-show");
+                }
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $(".inview").on("inview", function (event, isInView) {
+                if (isInView) {
+                    $(this).stop().addClass("is-show");
                 }
             });
         });
