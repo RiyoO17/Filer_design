@@ -89,6 +89,9 @@ header {
   bottom: 30px;
   left: 50px;
 }
+body {
+  overflow-x: hidden;
+}
 .spbr {
   display: none;
 }
@@ -304,6 +307,14 @@ header {
   padding-top: 38px;
   margin-bottom: 82px;
 }
+.contact {
+  padding-bottom: 61px;
+  z-index: auto;
+}
+.title_contact {
+  position: relative;
+  z-index: 1000;
+}
 
 .contact_form {
   margin-top: 62px;
@@ -363,13 +374,14 @@ button {
   font-size: 22px;
 }
 .square {
-  margin-top: 60px;
+  /* margin-top: 60px; */
   width: 100%;
   height: 164px;
   background-color: #d68f4f;
   position: relative;
   display: flex;
   align-items: center;
+  z-index: 1000;
 }
 .footer_logo {
   width: 23%;
@@ -381,7 +393,8 @@ button {
 }
 .sheep_logo {
   position: absolute;
-  bottom: 96%;
+  /* bottom: 96%; */
+  bottom: 0;
   left: 10%;
   mix-blend-mode: multiply;
 }
@@ -586,8 +599,10 @@ button {
 .hover-mask4 p {
   width: 85%;
 }
-.about3 .sheep_logo {
+.favorite .sheep_logo {
   left: 70%;
+  bottom: -10%;
+  z-index: auto;
 }
 .top3 img {
   width: 100%;
@@ -703,8 +718,8 @@ table td {
 #wavy-line {
   position: absolute;
   z-index: 100;
-  height: 106.4%;
-  top: -10%;
+  height: 103%;
+  top: -4%;
   right: 0;
 }
 #wavy-line path {
@@ -717,7 +732,6 @@ table td {
 }
 main {
   position: relative;
-  overflow-x: hidden;
 }
 section {
   position: relative;
