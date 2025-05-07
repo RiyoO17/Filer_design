@@ -34,7 +34,7 @@ h1 {
 
 .header_wrap.active {
   mix-blend-mode: difference;
-  z-index: 100;
+  z-index: 1200;
 }
 
 .sp_header {
@@ -824,6 +824,9 @@ section {
     left: 0;
     width: 100%;
     top: 28px;
+  }
+  .header_wrap.active {
+    display: none;
   }
   .sp_nav {
     margin-bottom: 55px;
