@@ -505,14 +505,14 @@ button {
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 100px;
-  position: relative;
+  /* position: relative; */
   z-index: 1000;
 }
 .favorite2 {
   display: flex;
   justify-content: center;
   width: 50%;
-  position: relative;
+  /* position: relative; */
   z-index: 1000;
 }
 .favorite2 > div {
@@ -574,7 +574,6 @@ button {
   max-width: 500px;
   position: relative;
   width: 100%;
-  position: relative;
   z-index: 1000;
 }
 .Sea2 img,
@@ -583,7 +582,7 @@ button {
 .Interior2 img {
   height: auto;
   width: 100%;
-  position: relative;
+  /* position: relative; */
   z-index: 1000;
 }
 .hover-mask,
