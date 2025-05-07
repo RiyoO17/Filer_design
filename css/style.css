@@ -602,7 +602,7 @@ button {
 .favorite .sheep_logo {
   left: 70%;
   bottom: -10%;
-  z-index: auto;
+  /* z-index: auto; */
 }
 .top3 img {
   width: 100%;
