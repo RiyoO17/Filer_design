@@ -370,7 +370,6 @@ button {
   position: relative;
   display: flex;
   align-items: center;
-  z-index: 1000;
 }
 .footer_logo {
   width: 23%;
@@ -703,14 +702,15 @@ table td {
 /* 線の動き */
 #wavy-line {
   position: absolute;
-  z-index: 100;
+  z-index: 0;
   height: 100%;
-  top: -3%;
+  top: -2%;
   right: 0;
 }
 #wavy-line path {
   fill: #fff;
 }
+
 main {
   position: relative;
 }
@@ -828,7 +828,7 @@ section {
     height: 100vh;
     padding-bottom: 5vh;
     box-sizing: border-box;
-    margin-top: 28px;
+    padding-top: 28px;
   }
   .header_wrap2 {
     display: flex;
