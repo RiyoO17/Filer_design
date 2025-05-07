@@ -702,17 +702,22 @@ table td {
 /* 線の動き */
 #wavy-line {
   position: absolute;
-  z-index: 0;
-  height: 100%;
-  top: -2%;
+  z-index: 100;
+  height: 106.4%;
+  top: -10%;
   right: 0;
 }
 #wavy-line path {
   fill: #fff;
 }
-
+.lower_page #wavy-line {
+  right: auto;
+  left: 40px;
+  height: 103%;
+}
 main {
   position: relative;
+  overflow-x: hidden;
 }
 section {
   position: relative;
@@ -801,6 +806,14 @@ section {
 }
 
 @media screen and (max-width: 767px) {
+  .line {
+    position: relative;
+  }
+  #wavy-line {
+    top: -9%;
+    height: 111%;
+  }
+
   .pc_header {
     display: none;
   }
