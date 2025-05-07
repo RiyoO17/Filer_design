@@ -485,6 +485,10 @@ button {
   padding-top: 60px;
   line-height: 1.73;
 }
+.favorite {
+  z-index: auto;
+  padding-bottom: 100px;
+}
 .favorite h2 {
   font-size: 47px;
   color: #003b1a;
@@ -493,17 +497,23 @@ button {
   margin: 0% auto;
   margin-top: 200px;
   margin-bottom: 62px;
+  position: relative;
+  z-index: 1000;
 }
 .favorite_photo {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 100px;
+  position: relative;
+  z-index: 1000;
 }
 .favorite2 {
   display: flex;
   justify-content: center;
   width: 50%;
+  position: relative;
+  z-index: 1000;
 }
 .favorite2 > div {
   width: 100%;
@@ -524,6 +534,8 @@ button {
   font-family: "monotype corsiva";
   text-align: left;
   padding-bottom: 25px;
+  position: relative;
+  z-index: 1000;
 }
 .num3 {
   font-size: 27px;
@@ -531,6 +543,8 @@ button {
   font-family: "monotype corsiva";
   text-align: right;
   padding-bottom: 25px;
+  position: relative;
+  z-index: 1000;
 }
 .Sea {
   width: 83%;
@@ -560,6 +574,8 @@ button {
   max-width: 500px;
   position: relative;
   width: 100%;
+  position: relative;
+  z-index: 1000;
 }
 .Sea2 img,
 .Travel2 img,
@@ -567,6 +583,8 @@ button {
 .Interior2 img {
   height: auto;
   width: 100%;
+  position: relative;
+  z-index: 1000;
 }
 .hover-mask,
 .hover-mask2,
@@ -601,7 +619,7 @@ button {
 }
 .favorite .sheep_logo {
   left: 70%;
-  bottom: -10%;
+  bottom: 0;
   /* z-index: auto; */
 }
 .top3 img {
@@ -719,7 +737,7 @@ table td {
   position: absolute;
   z-index: 100;
   height: 103%;
-  top: -4%;
+  top: -3%;
   right: 0;
 }
 #wavy-line path {
@@ -826,6 +844,12 @@ section {
   #wavy-line {
     top: -9%;
     height: 111%;
+  }
+  .lower_page #wavy-line {
+    right: auto;
+    left: 40px;
+    height: 100%;
+    top: 0%;
   }
 
   .pc_header {
